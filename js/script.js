@@ -2,15 +2,12 @@ let ticket;
 const outputTicket = document.getElementById("output");
 console.log(outputTicket);
 
-//FIDELITY-CARD
-document.getElementById("invia").addEventListener('click', function(){
-  //FRECCIA-YOUNG
-  const under18 = document.getElementById("young").value;
-  console.log(under18);
-  //FRECCIA-SENIOR
-  const over65 = document.getElementById("senior").value;
-  console.log(over65);
-})
+//FIDELITY CARD
+const frecciaYoung = document.getElementById("young");
+console.log(frecciaYoung);
+const frecciaSenior = document.getElementById("senior");
+console.log(frecciaSenior);
+
 
 //PRICE TICKET
 const costPerKm       = 0.21,
@@ -18,8 +15,8 @@ const costPerKm       = 0.21,
       discountUnder18 = 20,
       discountOver65  = 40,
       ticketPrice     = (costPerKm * kmTravel);
-let  discountPrice   = 0;
-let totalPrice = 0;
+let   discountPrice   = 0,
+      totalPrice      = (ticketPrice - discountPrice);
 
 console.log(costPerKm, kmTravel, discountUnder18, discountOver65, ticketPrice, discountPrice, totalPrice);
 
@@ -33,19 +30,16 @@ console.log(userLname );
 //AGE
 const ageRange = document.getElementById("age").value;
 console.log(ageRange);
-//TOTAL PRICE
 
+//TOTAL PRICE
 // //PRICE TICKET
-if("ageRange < 18"){
- discountPrice = ticketPrice * discountUnder18/100;
-}else if("ageRange > 65"){
-discountPrice = ticketPrice * discountOver65/100;
+if("ageRange = frecciaYoung "){
+ discountPrice = ticketPrice * (discountUnder18/100);
+}else if("ageRange = frecciaSenior "){
+discountPrice = ticketPrice * (discountOver65/100);
 }
 
-// //TOTAL PRICE TICKET
-totalPrice = ticketPrice - discountPrice;
-console.log(totalPrice);
-
+totalPrice = (ticketPrice - discountPrice);
 
 //OUTPUT TICKET
 ticket = ` PASSEGGERO <br> ${userFname} ${userLname} <br> TOTALE <br>  ${totalPrice}
