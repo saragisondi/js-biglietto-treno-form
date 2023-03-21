@@ -20,3 +20,10 @@ Di conseguenza ho inserito tre variabili, le ho collegate ai tre input e al butt
 
 ## Step 2
 Ho collegato l'output per generare il ticket finale dove, per il momento, ho inserito il nome del passeggero.
+
+## Step 3
+Ho inserito i km che verranno percorsi dall'utente e li ho moltiplicati per il costo al km. 
+Poi ho applicato le condizioni di scontistica sul prezzo totale.
+
+## Step 4
+Ho inserito l'opzione per utilizzare lo sconto under18 oppure over65.
