@@ -1,0 +1,11 @@
+button{
+margin: 10px 5px;
+}
+
+.row{
+  display: flex;
+}
+
+.row .col{
+  margin: 0 10px;
+}

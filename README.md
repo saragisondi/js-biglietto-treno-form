@@ -13,3 +13,10 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 3) Moltiplicare il prezzo del biglietto (0,21€ al km) per i km che l'utente vuole percorrere;
 4) Inserire le istruzioni per applicare le condizioni di scontistica;
 5) Stampare l'output in pagina;
+
+## Step 1
+Ho creato tre input dove l'utente inserirà il suo nome, la sua età e i km che vuole percorrere.
+Di conseguenza ho inserito tre variabili, le ho collegate ai tre input e al button-1(Genera).
+
+## Step 2
+Ho collegato l'output per generare il ticket finale dove, per il momento, ho inserito il nome del passeggero.
