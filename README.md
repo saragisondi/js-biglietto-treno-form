@@ -27,3 +27,5 @@ Poi ho applicato le condizioni di scontistica sul prezzo totale.
 
 ## Step 4
 Ho inserito l'opzione per utilizzare lo sconto under18 oppure over65.
+
+## Step 5

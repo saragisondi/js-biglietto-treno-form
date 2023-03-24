@@ -37,6 +37,11 @@ input, select{
   width: 20%;
 }
 
+.row.travel{
+  background-color:  #C41329 ;
+  color: white;
+}
+
 .qr-code{
   text-align: end;
   margin: 0 20px;
