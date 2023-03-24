@@ -25,10 +25,13 @@ header{
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   min-height: 150px;
 }
+
+/*NAVBAR TOP*/
 .navbar.top{
   background-color:#F2F3F7;
   display: flex;
   justify-content: space-between;
+  padding: 5px 0;
 }
 
 .navbar.top ul{
@@ -37,6 +40,31 @@ header{
 
 .navbar.top ul li{
   margin: 0 10px;
+}
+
+.navbar.top img{
+  width: 20px;
+}
+
+/*NAVBAR BOTTOM*/
+.navbar.bottom span{
+  font-size: medium;
+}
+
+.navbar.bottom .small-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar.bottom .add-cart{
+  margin-right: 15px;
+}
+
+.navbar.bottom .info{
+  border-bottom: 1px solid #DFDFDF ;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* 
