@@ -47,14 +47,53 @@ header{
 }
 
 /*NAVBAR BOTTOM*/
+.navbar.bottom img{
+  width: 40%;
+  height: 50px;
+  object-fit: contain;
+}
+
 .navbar.bottom span{
   font-size: medium;
+}
+
+.navbar .logo{
+  width: 20%;
+  height: 50px;
 }
 
 .navbar.bottom .small-nav{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
+}
+
+.container-small-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center ;
+  background-color: #F2F3F7;
+  border-radius: 20px;
+  height: 25px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.container-small-nav div{
+  margin: 0 10px;
+  
+}
+
+.container-small-nav .active{
+  background-color: #006565;
+  border-radius: 20px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
 }
 
 .navbar.bottom .add-cart{
