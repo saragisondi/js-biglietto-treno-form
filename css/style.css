@@ -23,7 +23,6 @@ a{
 /*HEADER*/
 header{
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  min-height: 150px;
 }
 
 /*NAVBAR TOP*/
@@ -101,9 +100,9 @@ header{
 }
 
 .navbar.bottom .info{
-  border-bottom: 1px solid #DFDFDF ;
   display: flex;
   justify-content: space-between;
+  min-height: 50px;
 }
 
 /* 
