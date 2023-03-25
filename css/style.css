@@ -25,6 +25,14 @@ header{
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
+/*NAV*/
+nav{
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5) ;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
 /*NAVBAR TOP*/
 .navbar.top{
   background-color:#F2F3F7;
@@ -60,6 +68,7 @@ header{
   width: 20%;
   height: 50px;
 }
+
 
 .navbar.bottom .small-nav{
   display: flex;
@@ -97,57 +106,85 @@ header{
 
 .navbar.bottom .add-cart{
   margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar.bottom .info{
   display: flex;
   justify-content: space-between;
-  min-height: 50px;
+  min-height: 60px;
 }
 
-/*JUMBOTRON*/
-.jumbotron{
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.jumbotron h1{
-  color:white ;
-  position: absolute;
-  top: 5%;
-  right: 25%;
-  text-shadow: 2px 2px 3px #333;;
-}
-
-.overlay{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-
-.card{
-  position:absolute;
-  top: 20%;
-  right: 12%;
-  background-color: #ffffff ;
-  width: 70%;
-  height: 450px;
-  border-radius: 20px ;
-}
-
-.card-top ul {
+/*TRAVEL*/
+.navbar.bottom .travel{
+  min-height: 40px;
+  border-top: 1px solid #DFDFDF;
   display: flex;
-  justify-content:space-between;
-  padding: 0 10px;
-  height: 50px;
+  justify-content: space-around;
 }
 
-.card-top ul li{
-  height: 50px
+.travel .left{
+  display: flex;
 }
+
+.travel h5{
+  padding-top: 10px;
+}
+
+.travel .fa-arrow-right-long{
+  margin: 0 5px;
+}
+
+.travel #date-now{
+  color: #636F8D ;
+  font-size: small;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.travel  #date-now span{
+  font-size: small;
+}
+
+.travel .fa-circle{
+  font-size: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.travel .right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.travel button{
+  background-color: #EDEEF2;
+  color: #272428;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.travel .left button{
+  margin-top: 20px;
+}
+
+
+
+/*MAIN*/
+main{
+  background-color: #F2F3F7;
+}
+
+
+
 
 
 /* 
