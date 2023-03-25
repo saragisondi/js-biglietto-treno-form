@@ -183,27 +183,27 @@
 
         <div class="buyer">
 
-          <div class="info-user">
+          <div class="info-buyer">
             <label for="firstname">Nome</label>
-            <input type="text" placeholder="Nome*">
+            <input id="firstname" type="text" placeholder="Nome*">
           </div>
 
-          <div class="info-user">
+          <div class="info-buyer">
             <label for="lastname">Cognome</label>
-            <input type="text" placeholder="Cognome*">
+            <input id="lastname" type="text" placeholder="Cognome*">
           </div>
 
-          <div class="info-user">
+          <div class="info-buyer">
             <label for="mail">Email</label>
-            <input type="text" placeholder="Email*">
+            <input id="email" type="text" placeholder="Email*">
           </div>
 
-          <div class="info-user">
+          <div class="info-buyer">
             <label for="km">Km da percorrere</label>
-            <input type="number" placeholder="km*">
+            <input id="km" type="number" placeholder="km*">
           </div>
 
-          <div class="info-user">
+          <div class="info-buyer">
             <label for="fidelity-card">Carta Freccia</label>
             <select id="carta-freccia">
               <option id="none">Nessuna</option>
@@ -211,7 +211,40 @@
               <option id="senior">Senior (> 65 anni)</option>
             </select>
           </div>
+          
+        </div>
+        
+        <div class="train-ticket">
 
+          <div class="name box">
+            <h3>Passeggero</h3>
+            <div id="name-passenger"></div>
+          </div>
+
+          <div class="offer box">
+            <h3>Offerta</h3>
+            <div id="offer"></div>
+          </div>
+
+          <div class="train-carriage box">
+            <h3>Carrozza</h3>
+            <div id="train-carriage"></div>
+          </div>
+
+          <div class="code-ticket box">
+            <h3>Codice Biglietto</h3>
+            <div id="code-ticket"></div>
+          </div>
+
+          <div class="qr-code box">
+            <h3>QR-CODE</h3>
+            <img src="img/qr-code.jpg" alt="qr-code">
+          </div>
+
+          <div class="price-ticket box">
+            <h3>Prezzo</h3>
+            <div id="price-ticket"></div>
+          </div>
 
         </div>
 
@@ -220,44 +253,6 @@
 
     </div>
   </main>
-
- <!-- 
-    <div class="row info">
-  
-      <div class="col">
-        <label for="firstname">Nome</label>
-        <div>
-          <input id="firstname" type="text" placeholder="il tuo nome">
-        </div>
-      </div>
-      
-     
-      <div class="col">
-        <label for="lastname">Cognome</label>
-        <div>
-          <input id="lastname" type="text" placeholder="il tuo cognome">
-        </div>
-      </div>
-  
-      <div class="col">
-        <label for="fidelity-card">Possessore di CartaFreccia</label>
-          <div>
-            <select id="age">
-              <option> - </option>
-            <option id="young">Young (> 18 anni)</option>
-            <option id="senior">Senior (< 65 anni)</option>
-            </select>
-          </div>
-      </div>
-      
-    <div class="row">
-      <div class="button">
-      <button id="button-1">Genera</button>
-      <button id="button-2">Annulla</button>
-    </div>
-    
-    </div>
- -->
 
   
 

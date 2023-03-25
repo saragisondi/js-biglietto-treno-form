@@ -7,6 +7,7 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  height: 100vh;
 }
 
 li{
@@ -20,31 +21,36 @@ a{
   font-size: small;
 }
 
+label{
+  font-weight: bold;
+}
 .active{
   background-color: #006565;
   color: white;
 }
 
+
 /*HEADER*/
 header{
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #FFFFFF;
 }
 
 /*NAV*/
 nav{
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5) ;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100%;
 }
 
 /*NAVBAR TOP*/
 .navbar.top{
-  background-color:#F2F3F7;
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
+  background-color:#F2F3F7;
 }
 
 .navbar.top ul{
@@ -280,73 +286,50 @@ main .container{
 
 /*TICKET*/
 .ticket-bottom{
-  margin: 100px 0;
+  margin: 60px 0;
 }
 
 .buyer{
   margin: 50px 0;
   background-color: #FAFAFA;
   width: 100%;
-  height: 500px;
+  height: 100px;
   border-radius: 10px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
   display: flex;
 }
 
-.info-user{
+.info-buyer{
   display: flex;
   flex-direction: column;
   width: 20%;
   margin:20px;
 }
-/* 
-img{
-  max-width: 100%;
+
+.train-ticket{
+    margin: 50px 0;
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
 }
 
-button{
-margin: 10px 5px;
-}
-
-input, select{
-  margin: 5px 0;
-}
-
-
-.row{
-  display: flex;
-  color:#006C67 ;
-  justify-content: space-between;
-  margin-top: 30px;}
-
-.row .col{
-  margin: 0 5px;
-}
-
-.row-output{
-  margin-top: 10%;
-  min-height: 350px;
-  background-color:  #C41329 ;
-  color: white;
-}
-
-.row-output img{
-  width: 20%;
-}
-
-.row.travel{
-  background-color:  #C41329 ;
-  color: white;
+.train-ticket .box{
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  border: 1px solid black;
 }
 
 .qr-code{
-  text-align: end;
-  margin: 0 20px;
-
+  width: 100%;
+  height: 100%;
 }
 
-
-.logo{
-  width: calc( 100% / 3);
+.qr-code img{
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
 }
- */
