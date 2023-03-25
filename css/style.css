@@ -290,8 +290,15 @@ main .container{
   height: 500px;
   border-radius: 10px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
 }
 
+.info-user{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin:20px;
+}
 /* 
 img{
   max-width: 100%;
