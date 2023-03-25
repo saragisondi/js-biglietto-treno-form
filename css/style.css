@@ -169,14 +169,14 @@ nav{
   margin: 0 5px;
 }
 
-.travel #date-now{
+.travel #date{
   color: #636F8D ;
   font-size: small;
   font-weight: bold;
   padding-bottom: 10px;
 }
 
-.travel  #date-now span{
+.travel  #date span{
   font-size: small;
 }
 

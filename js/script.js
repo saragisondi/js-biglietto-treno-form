@@ -48,7 +48,7 @@ if ( cartaFreccia == "Senior"){
   ${over65}€
   `
   document.getElementById('cart').innerHTML = `
-  ${totalPrice}€
+  ${over65}€
   `
 }else if(cartaFreccia !== "Senior"){
   ticket = under18;
@@ -56,7 +56,7 @@ if ( cartaFreccia == "Senior"){
   ${under18}€
   `
   document.getElementById('cart').innerHTML = `
-  ${totalPrice}€
+  ${under18}€
   `
 }
 
@@ -77,6 +77,11 @@ ${carriageRandom}
 `
 console.log(carriageRandom)
 
-})
+//NUMERO TICKET
+const codeTicketRandom = Math.floor(Math.random()*10000);
+document.getElementById("code-ticket").innerHTML = `
+${codeTicketRandom}
+`
 
+})
 
