@@ -24,10 +24,18 @@ a{
 label{
   font-weight: bold;
 }
+
+input, select{
+  margin-top: 5px;
+  padding: 5px;
+}
+
 .active{
   background-color: #006565;
   color: white;
 }
+
+
 
 
 /*HEADER*/
@@ -314,13 +322,18 @@ main .container{
     border-radius: 10px;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
     display: flex;
+
 }
 
 .train-ticket .box{
   width: 100%;
   text-align: center;
   padding-top: 10px;
-  border: 1px solid black;
+}
+
+.box div{
+  font-size: x-large;
+  margin-top: 30px;
 }
 
 .qr-code{
@@ -333,3 +346,29 @@ main .container{
   height: 80%;
   object-fit: contain;
 }
+
+/*BUTTON TICKET*/
+.button-ticket{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-ticket button{
+  margin: 10px;
+  padding: 10px;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+#genera{
+  background-color:#005656;
+}
+
+#annulla{
+  background-color: #E41233;
+}
+
