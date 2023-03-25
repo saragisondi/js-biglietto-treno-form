@@ -20,6 +20,11 @@ a{
   font-size: small;
 }
 
+.active{
+  background-color: #006565;
+  color: white;
+}
+
 /*HEADER*/
 header{
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -96,7 +101,6 @@ nav{
 }
 
 .container-small-nav .active{
-  background-color: #006565;
   border-radius: 20px;
   height: 25px;
   display: flex;
@@ -232,9 +236,13 @@ main .container{
 .choice-day .box{
   padding: 5px;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.choice-day .box i{
+  text-align: center;
+  vertical-align: middle;
 }
 
 .choice-day button{
@@ -245,9 +253,43 @@ main .container{
   border-radius: 10px;
 }
 
+.box.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .choice-day .box.day{
   border-right:1px solid #E3E6ED;
   width: 100%;
+}
+
+.choice-day .box.day.active{
+  border-radius: 10px;
+  font-size: large;
+}
+
+.choice-day .box.day.prec{
+  color:#636A77;
+}
+
+.choice-day .box.day p{
+  font-size: small;
+}
+
+
+/*TICKET*/
+.ticket-bottom{
+  margin: 100px 0;
+}
+
+.buyer{
+  margin: 50px 0;
+  background-color: #FAFAFA;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* 
