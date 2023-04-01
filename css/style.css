@@ -322,8 +322,11 @@ main .container{
     border-radius: 10px;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
     display: flex;
+    display: none;
 
 }
+
+
 
 .train-ticket .box{
   width: 100%;
@@ -345,6 +348,7 @@ main .container{
   width: 100%;
   height: 80%;
   object-fit: contain;
+  
 }
 
 /*BUTTON TICKET*/
@@ -372,3 +376,10 @@ main .container{
   background-color: #E41233;
 }
 
+.d-block{
+  display: block;
+}
+
+.d-flex{
+  display: flex;
+}

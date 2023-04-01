@@ -1,5 +1,9 @@
+/******************************BUTTONS*****************************************/
+const btnGenera = document.getElementById("genera");
+const btnAnnulla = document.getElementById("annulla");
+
 //CHIEDERE ALL'UTENTE IL NOME, COGNOME, EMAIL, KM e CARTA FRECCIA
-document.getElementById("genera").addEventListener('click', function (){
+btnGenera.addEventListener('click', function (){
   const Fname = document.getElementById("firstname").value;
   console.log(Fname)
 
@@ -16,6 +20,13 @@ document.getElementById("genera").addEventListener('click', function (){
   const cartaFreccia = document.getElementById("carta-freccia").value;
   document.getElementById("offerta").innerHTML = (cartaFreccia);
   console.log(cartaFreccia)
+
+  const trainTicket= document.querySelector('.train-ticket');
+  trainTicket.classList.add('d-block');
+  
+  const cart = document.getElementById('cart');
+
+
 
   //PREZZO TOTALE DEL VIAGGIO
 const price = 0.21;
@@ -47,7 +58,7 @@ if ( cartaFreccia == "Senior"){
   document.getElementById('price-ticket').innerHTML = `
   ${over65}€
   `
-  document.getElementById('cart').innerHTML = `
+  cart.innerHTML = `
   ${over65}€
   `
 }else if(cartaFreccia !== "Senior"){
@@ -55,7 +66,7 @@ if ( cartaFreccia == "Senior"){
   document.getElementById('price-ticket').innerHTML = `
   ${under18}€
   `
-  document.getElementById('cart').innerHTML = `
+  cart.innerHTML = `
   ${under18}€
   `
 }
@@ -66,7 +77,7 @@ if(cartaFreccia == "Nessuna"){
   document.getElementById('price-ticket').innerHTML = `
   ${totalPrice}€
   `
-  document.getElementById('cart').innerHTML = `
+  cart.innerHTML = `
   ${totalPrice}€
   `
 }
@@ -78,10 +89,40 @@ ${carriageRandom}
 console.log(carriageRandom)
 
 //NUMERO TICKET
-const codeTicketRandom = Math.floor(Math.random()*10000);
+const codeTicketRandom = Math.floor(Math.random()*1000000);
 document.getElementById("code-ticket").innerHTML = `
 ${codeTicketRandom}
 `
-
 })
+
+document.getElementById("annulla").addEventListener('click', function (){
+  const dNone = document.getElementsByClassName("d-none").value;
+  console.log(dNone)
+})
+
+
+btnAnnulla.addEventListener('click', function (){
+
+  const Fname = document.getElementById("firstname").value ="";
+
+  const Lname = document.getElementById("lastname").value ="";
+
+  const email = document.getElementById("email").value ="";
+
+  const km = document.getElementById("km").value ="";
+
+  const cartaFreccia = document.getElementById("carta-freccia").value ="";
+  document.getElementById("offerta").innerHTML = (cartaFreccia);
+
+  
+  const trainTicket= document.querySelector('.train-ticket');
+  trainTicket.classList.remove('d-block');
+
+  const cart = document.getElementById('cart');
+  cart.innerHTML = `
+  ${0,00}
+  `
+
+
+  })
 
